@@ -17,13 +17,20 @@ public class SimpleExample {
     private static SimpleExample threadSync;
     private static Thread t1, t2, t3, t4, t5;
     private static final Random rand = new Random();
-    private static Semaphore sm = new Semaphore(2);// 信号量 允许2个线程 true表示先进先出
-    private static Semaphore wsm = new Semaphore(1);// 信号量 允许1个线程
-    String text = "Beginning of the Book";// 代表书本
-    AtomicInteger readerCount = new AtomicInteger(0); // 记录当前读者数量
-    AtomicInteger writerCount = new AtomicInteger(0); // 记录当前写者数量
+    /** 信号量 读 允许2个线程 true表示先进先出 **/
+    private static Semaphore sm = new Semaphore(2);
+    /** 信号量 写 允许1个线程 **/
+    private static Semaphore wsm = new Semaphore(1);
+    /**  代表书本 **/
+    String text = "Beginning of the Book";
+    /** 记录当前读者数量 **/
+    AtomicInteger readerCount = new AtomicInteger(0);
+    /**  记录当前写者数量 **/
+    AtomicInteger writerCount = new AtomicInteger(0);
 
-    // 随机休眠一定时间
+    /**
+     * 随机休眠一定时间
+     */
     private void busy() {
         try {
             Thread.sleep(rand.nextInt(1000) + 1000);
@@ -31,7 +38,9 @@ public class SimpleExample {
         }
     }
 
-    // 写函数
+    /**
+     * 写函数
+      */
     void write(String sentence) {
         System.out.println(Thread.currentThread().getName()
                 + " started to WRITE");
@@ -42,7 +51,9 @@ public class SimpleExample {
                 + " finished WRITING");
     }
 
-    // 读函数
+    /**
+     * read
+     */
     void read() {
 
         System.out.println("\n" + Thread.currentThread().getName()
@@ -52,7 +63,9 @@ public class SimpleExample {
 
     }
 
-    // 写者
+    /**
+     * writer
+     */
     private class Writer implements Runnable {
 
         SimpleExample ts;
@@ -125,7 +138,9 @@ public class SimpleExample {
         }
     }
 
-    // 创建两个读者 一个写者
+    /**
+     *  创建两个读者 两个写者
+      */
     public void startThreads() {
         SimpleExample ts = new SimpleExample();
         t1 = new Thread(new Writer(ts), "Writer # 1");

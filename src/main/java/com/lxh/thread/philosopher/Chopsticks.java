@@ -13,13 +13,17 @@ import java.util.List;
 public class Chopsticks {
     public static List<Boolean> chops = new ArrayList<Boolean>();
     static {
-        chops.add(false); //为了方便计算，第一个不会参与计算
+        //为了方便计算，第一个不会参与计算
+        chops.add(false);
         chops.add(false);
         chops.add(false);
         chops.add(false);
         chops.add(false);
     }
 
+    /**
+     * 如果能同时获取两个资源，就获取，否则释放资源
+     */
     public synchronized void getChop() {
         String currentName = Thread.currentThread().getName();
         int index = Integer.parseInt(currentName);

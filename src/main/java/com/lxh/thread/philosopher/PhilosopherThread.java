@@ -8,13 +8,13 @@ package com.lxh.thread.philosopher;
  * @Date 2018/6/22
  */
 public class PhilosopherThread extends Thread {
-    private String name; //线程名称，给哲学家编序号用
+    /** 线程名称，给哲学家编序号用 **/
+    private String name;
     private Chopsticks chopsticks;
 
 
     public PhilosopherThread (String name, Chopsticks chopsticks) {
         super(name);
-// this.name = name;
         this.chopsticks = chopsticks;
     }
 
