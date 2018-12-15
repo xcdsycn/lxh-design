@@ -11,6 +11,8 @@ import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 队列里的元素过了延期时间，才会被取出，不然就不返回
+ *
  * DelayQueue是一个BlockingQueue，其特化的参数是Delayed。（不了解BlockingQueue的同学，先去了解BlockingQueue再看本文）
  * Delayed扩展了Comparable接口，比较的基准为延时的时间值，Delayed接口的实现类getDelay的返回值应为固定值（final）。DelayQueue内部是使用PriorityQueue实现的。
  * DelayQueue = BlockingQueue + PriorityQueue + Delayed
@@ -47,6 +49,8 @@ public class QueueMain {
      * @param delayQueue
      */
     private static void producer(final DelayQueue<DelayedElement> delayQueue) {
+        // 随机数的种子不可预测
+        // SecureRandom类收集了一些随机事件，比如鼠标点击，键盘点击等等，SecureRandom 使用这些随机事件作为种子
         final SecureRandom secureRandom = new SecureRandom();
         new Thread(new Runnable() {
             public void run() {
@@ -118,15 +122,20 @@ public class QueueMain {
 
 class DelayedElement implements Delayed {
 
-    private final long delay; //延迟时间
-    private final long expire;  //到期时间
-    private final String msg;   //数据
-    private final long now; //创建时间
+    private final long delay;
+    //延迟时间
+    private final long expire;
+    //到期时间
+    private final String msg;
+    //数据
+    private final long now;
+    //创建时间
 
     public DelayedElement(long delay, String msg) {
         this.delay = delay;
         this.msg = msg;
-        expire = System.currentTimeMillis() + delay;    //到期时间 = 当前时间+延迟时间
+        expire = System.currentTimeMillis() + delay;
+        //到期时间 = 当前时间+延迟时间
         now = System.currentTimeMillis();
     }
 

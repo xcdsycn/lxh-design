@@ -1,7 +1,5 @@
 package com.lxh.thread.deadlock.lock;
 
-import com.lxh.thread.deadlock.lock.LockA;
-import com.lxh.thread.deadlock.lock.LockB;
 
 /**
  * 两个死锁的例子，都是发生在多个资源的使用的情况下

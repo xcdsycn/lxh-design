@@ -37,6 +37,7 @@ public class Chopsticks {
     public synchronized void getChop() {
         String currentName = Thread.currentThread().getName();
         int index = Integer.parseInt(currentName);
+        // 如果左边的或右边的筷子有人用，等待
         while (chops.get(index) || chops.get((index + 1)%5)) {
             try {
                 wait();
@@ -44,6 +45,7 @@ public class Chopsticks {
                 e.printStackTrace();
             }
         }
+        // 如果左边和右边的筷子都没有人用，占用
         chops.set(index, true);
         chops.set((index + 1)%5 ,true);
     }

@@ -9,6 +9,11 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 通过信号量 + 原子变量的方式达到
+ * 信号量:用来设置读、写线程数量，让线程获取标识
+ * 原子变量：用来计数：读、写线程的个数，用来让线程判断是否可以尝试获取信号量
+ * 1. 当读的数量为 0 的时候， 尝试获取写的信号量（1），才可以写， 写的数量由信号量控制
+ * 2. 当写的数量为 0 ， 尝试获取读的信号量（2），才可以读，读的数量由信号量控制
  * @author lxh
  * @Date 2018/6/22
  */
@@ -18,7 +23,7 @@ public class SimpleExample {
     private static Thread t1, t2, t3, t4, t5;
     private static final Random rand = new Random();
     /** 信号量 读 允许2个线程 true表示先进先出 **/
-    private static Semaphore sm = new Semaphore(2);
+    private static Semaphore rsm = new Semaphore(2);
     /** 信号量 写 允许1个线程 **/
     private static Semaphore wsm = new Semaphore(1);
     /**  代表书本 **/
@@ -119,7 +124,7 @@ public class SimpleExample {
                     try {
 //                        System.out.println("Read---readerCount= "+readerCount.get());
 //                        System.out.println("Read---writerCount= "+writerCount.get());
-                        sm.acquire(); // 读者获取允许
+                        rsm.acquire(); // 读者获取允许
                         readerCount.getAndIncrement();
                     } catch (InterruptedException ex) {
                         ex.printStackTrace();
@@ -130,7 +135,7 @@ public class SimpleExample {
                     busy();
                     System.out.println(Thread.currentThread().getName()
                             + " end of read");
-                    sm.release(); // 释放允许
+                    rsm.release(); // 释放允许
                     readerCount.getAndDecrement();
                     busy();
                 }
