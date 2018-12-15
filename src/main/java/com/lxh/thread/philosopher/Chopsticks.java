@@ -29,6 +29,10 @@ public class Chopsticks {
 
     /**
      * 如果能同时获取两个资源，就获取，否则释放资源
+     * 如果左边的筷子或者右边的筷子有人用，那就等
+     * 如果都没有人用，那么就设置
+     * 因为 synchronized 是临界区，所以这段代码只有一个线程可以执行
+     * 但是用锁的时候就不是这么容易做了
      */
     public synchronized void getChop() {
         String currentName = Thread.currentThread().getName();
