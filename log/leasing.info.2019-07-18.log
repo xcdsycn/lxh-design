@@ -1,0 +1,225 @@
+2019-07-18 19:46:43,485 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26477 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:46:43,487 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:46:44,367 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:46:44,408 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:46:44,971 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:46:44,982 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:46:44,994 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:46:45,157 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$949a0fbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:45,201 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$ff8bcaed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:45,231 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:45,784 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:46:45,805 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:46:45,818 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:46:45,819 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:46:45,961 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:46:45,961 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 2454 ms
+2019-07-18 19:46:47,311 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:46:47,744 WARN (AbstractApplicationContext.java:557)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-07-18 19:46:47,744 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:46:47,749 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-07-18 19:46:47,766 INFO (ConditionEvaluationReportLoggingListener.java:135)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-18 19:46:47,997 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26477 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:46:47,998 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:46:48,215 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:46:48,227 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:46:48,307 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:46:48,308 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:46:48,310 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:46:48,388 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$949a0fbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:48,411 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$ff8bcaed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:48,425 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:46:48,621 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:46:48,622 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-2"]
+2019-07-18 19:46:48,623 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:46:48,623 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:46:48,639 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:46:48,639 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 639 ms
+2019-07-18 19:46:49,355 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:46:49,528 WARN (AbstractApplicationContext.java:557)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-07-18 19:46:49,529 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:46:49,530 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-07-18 19:46:49,536 INFO (ConditionEvaluationReportLoggingListener.java:135)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-18 19:49:06,019 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26527 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:49:06,021 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:49:06,823 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:06,861 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:07,403 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:49:07,409 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:49:07,418 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:49:07,569 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a42ae14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:07,610 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$85346943] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:07,638 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:08,128 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:49:08,146 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:49:08,159 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:49:08,159 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:49:08,276 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:49:08,277 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 2236 ms
+2019-07-18 19:49:09,484 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:49:09,871 WARN (AbstractApplicationContext.java:557)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-07-18 19:49:09,872 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:49:09,877 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-07-18 19:49:09,892 INFO (ConditionEvaluationReportLoggingListener.java:135)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-18 19:49:10,107 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26527 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:49:10,108 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:49:10,319 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:10,328 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:10,385 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:49:10,385 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:49:10,386 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:49:10,444 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a42ae14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:10,460 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$85346943] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:10,471 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:10,635 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:49:10,636 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-2"]
+2019-07-18 19:49:10,636 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:49:10,637 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:49:10,652 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:49:10,652 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 541 ms
+2019-07-18 19:49:11,346 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:49:11,518 WARN (AbstractApplicationContext.java:557)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-07-18 19:49:11,518 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:49:11,519 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-07-18 19:49:11,527 INFO (ConditionEvaluationReportLoggingListener.java:135)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-18 19:49:57,555 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26565 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:49:57,556 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:49:58,472 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:58,511 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:49:59,057 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:49:59,064 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:49:59,074 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:49:59,253 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd04997b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:59,288 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$47f654aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:59,311 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:49:59,825 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:49:59,843 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:49:59,854 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:49:59,854 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:49:59,983 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:49:59,983 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 2408 ms
+2019-07-18 19:50:01,140 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:50:01,931 WARN (FreeMarkerAutoConfiguration.java:67)- Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-07-18 19:50:02,087 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:50:02,297 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2019-07-18 19:50:02,384 INFO (EventDrivenConsumer.java:107)- Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-07-18 19:50:02,384 INFO (AbstractSubscribableChannel.java:64)- Channel 'application.errorChannel' has 1 subscriber(s).
+2019-07-18 19:50:02,384 INFO (AbstractEndpoint.java:159)- started _org.springframework.integration.errorLogger
+2019-07-18 19:50:02,411 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:50:02,474 INFO (TomcatWebServer.java:202)- Tomcat started on port(s): 50822 (http) with context path ''
+2019-07-18 19:50:02,480 INFO (StartupInfoLogger.java:59)- Started FsmTest in 5.469 seconds (JVM running for 6.418)
+2019-07-18 19:50:02,544 INFO (EventDrivenConsumer.java:107)- Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-07-18 19:50:02,547 INFO (AbstractSubscribableChannel.java:64)- Channel 'application.errorChannel' has 0 subscriber(s).
+2019-07-18 19:50:02,547 INFO (AbstractEndpoint.java:193)- stopped _org.springframework.integration.errorLogger
+2019-07-18 19:50:02,550 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2019-07-18 19:50:02,556 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:50:48,786 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26590 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:50:48,788 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:50:49,755 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:50:49,791 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:50:50,375 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:193)- No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-07-18 19:50:50,382 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:280)- No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-07-18 19:50:50,390 INFO (DefaultConfiguringBeanFactoryPostProcessor.java:431)- No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-07-18 19:50:50,555 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c35e155] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:50:50,598 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f7279c84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:50:50,624 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:50:51,167 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:50:51,186 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:50:51,200 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:50:51,200 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:50:51,328 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:50:51,328 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 2518 ms
+2019-07-18 19:50:52,476 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:50:53,250 WARN (FreeMarkerAutoConfiguration.java:67)- Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-07-18 19:50:53,406 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:50:53,611 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'taskScheduler'
+2019-07-18 19:50:53,693 INFO (EventDrivenConsumer.java:107)- Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-07-18 19:50:53,693 INFO (AbstractSubscribableChannel.java:64)- Channel 'application.errorChannel' has 1 subscriber(s).
+2019-07-18 19:50:53,693 INFO (AbstractEndpoint.java:159)- started _org.springframework.integration.errorLogger
+2019-07-18 19:50:53,721 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:50:53,784 INFO (TomcatWebServer.java:202)- Tomcat started on port(s): 50972 (http) with context path ''
+2019-07-18 19:50:53,790 INFO (StartupInfoLogger.java:59)- Started FsmTest in 5.554 seconds (JVM running for 6.497)
+2019-07-18 19:50:53,852 INFO (EventDrivenConsumer.java:107)- Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-07-18 19:50:53,854 INFO (AbstractSubscribableChannel.java:64)- Channel 'application.errorChannel' has 0 subscriber(s).
+2019-07-18 19:50:53,854 INFO (AbstractEndpoint.java:193)- stopped _org.springframework.integration.errorLogger
+2019-07-18 19:50:53,855 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'taskScheduler'
+2019-07-18 19:50:53,859 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:51:30,944 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26619 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:51:30,946 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:51:31,788 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:51:31,831 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:51:32,844 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:51:32,863 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:51:32,877 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:51:32,878 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:51:33,051 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:51:33,051 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 2083 ms
+2019-07-18 19:51:34,045 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:51:34,613 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:51:34,707 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:51:34,772 INFO (TomcatWebServer.java:202)- Tomcat started on port(s): 51093 (http) with context path ''
+2019-07-18 19:51:34,778 INFO (StartupInfoLogger.java:59)- Started FsmTest in 4.514 seconds (JVM running for 5.436)
+2019-07-18 19:51:34,842 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:52:17,592 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26638 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:52:17,593 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:52:18,341 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:52:18,379 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:52:19,292 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:52:19,307 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:52:19,318 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:52:19,318 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:52:19,483 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:52:19,483 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 1873 ms
+2019-07-18 19:52:20,358 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:52:20,877 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:52:20,959 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:52:21,016 INFO (TomcatWebServer.java:202)- Tomcat started on port(s): 51231 (http) with context path ''
+2019-07-18 19:52:21,021 INFO (StartupInfoLogger.java:59)- Started FsmTest in 3.93 seconds (JVM running for 4.842)
+2019-07-18 19:52:21,068 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:54:21,120 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26681 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:54:21,122 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:54:21,805 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:54:21,836 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:54:22,689 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 0 (http)
+2019-07-18 19:54:22,704 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:54:22,718 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-07-18 19:54:22,718 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 19:54:22,907 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-07-18 19:54:22,912 INFO (ServletWebServerApplicationContext.java:283)- Root WebApplicationContext: initialization completed in 1772 ms
+2019-07-18 19:54:23,800 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:54:24,315 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:54:24,412 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-auto-1"]
+2019-07-18 19:54:24,467 INFO (TomcatWebServer.java:202)- Tomcat started on port(s): 51589 (http) with context path ''
+2019-07-18 19:54:24,472 INFO (StartupInfoLogger.java:59)- Started FsmTest in 3.813 seconds (JVM running for 4.776)
+2019-07-18 19:54:24,524 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:57:23,878 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26757 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:57:23,880 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:57:24,591 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:57:24,625 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:57:25,788 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:57:26,739 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:57:26,804 INFO (StartupInfoLogger.java:59)- Started FsmTest in 3.37 seconds (JVM running for 4.236)
+2019-07-18 19:57:26,857 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-18 19:58:09,740 INFO (StartupInfoLogger.java:50)- Starting FsmTest on lxh.local with PID 26783 (started by lxh in /Users/lxh/Downloads/workspace/self/lxh-desgin)
+2019-07-18 19:58:09,741 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-18 19:58:10,621 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:58:10,656 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.lxh]' package. Please check your configuration.
+2019-07-18 19:58:11,200 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.statemachine.config.configuration.StateMachineAnnotationPostProcessorConfiguration' of type [org.springframework.statemachine.config.configuration.StateMachineAnnotationPostProcessorConfiguration$$EnhancerBySpringCGLIB$$676dd4aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:58:11,209 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd9bea9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 19:58:11,421 INFO (LifecycleObjectSupport.java:122)- started org.springframework.statemachine.support.DefaultStateMachineExecutor@6f1b8544
+2019-07-18 19:58:11,422 INFO (LifecycleObjectSupport.java:122)- started SI S2 S1  / SI / uuid=cb33e3fa-3e72-43f2-bd97-7246f36b26fa / id=StateMachine
+2019-07-18 19:58:12,979 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 19:58:13,053 INFO (StartupInfoLogger.java:59)- Started FsmTest in 3.778 seconds (JVM running for 4.629)
+2019-07-18 19:58:13,279 INFO (LifecycleObjectSupport.java:122)- started org.springframework.statemachine.support.DefaultStateMachineExecutor@3b28b7b0
+2019-07-18 19:58:13,280 INFO (LifecycleObjectSupport.java:122)- started SI S2 S1  / SI / uuid=9c2bc88f-71b1-47ff-91a6-d1b3d72f9fcb / id=orderMachine
+2019-07-18 19:58:13,291 INFO (LifecycleObjectSupport.java:147)- stopped org.springframework.statemachine.support.DefaultStateMachineExecutor@6f1b8544
+2019-07-18 19:58:13,292 INFO (LifecycleObjectSupport.java:147)- stopped SI S2 S1  /  / uuid=cb33e3fa-3e72-43f2-bd97-7246f36b26fa / id=StateMachine
+2019-07-18 19:58:13,294 INFO (LifecycleObjectSupport.java:81)- destroy called
