@@ -10,6 +10,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Address {
 
-    private String city;
-    private String detail;
+	private String city;
+
+	private String detail;
+
 }

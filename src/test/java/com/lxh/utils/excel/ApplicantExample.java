@@ -10,23 +10,26 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ApplicantExample extends AbstractWriterTest {
-    @Test
-    public void export() throws IOException {
-        String rootPath = this.getClass().getClassLoader().getResource("").getPath();
-        FileOutputStream os = new FileOutputStream(rootPath + "/applicator.xlsx");
 
-        Config config = new XmlConfigFactory(this.getClass().getClassLoader().getResourceAsStream("applicants.xml")).getConfig();
+	@Test
+	public void export() throws IOException {
+		String rootPath = this.getClass().getClassLoader().getResource("").getPath();
+		FileOutputStream os = new FileOutputStream(rootPath + "/applicator.xlsx");
 
-        Octopus.writeOneSheet(os, config, "test", applicantsList);
-    }
+		Config config = new XmlConfigFactory(this.getClass().getClassLoader().getResourceAsStream("applicants.xml"))
+				.getConfig();
 
-    @Test
-    public void exportWithAnnotation() throws IOException {
-        String rootPath = this.getClass().getClassLoader().getResource("").getPath();
-        FileOutputStream os = new FileOutputStream(rootPath + "/applicator1.xlsx");
+		Octopus.writeOneSheet(os, config, "test", applicantsList);
+	}
 
-        Config config = new AnnotationConfigFactory(Applicants.class).getConfig();
+	@Test
+	public void exportWithAnnotation() throws IOException {
+		String rootPath = this.getClass().getClassLoader().getResource("").getPath();
+		FileOutputStream os = new FileOutputStream(rootPath + "/applicator1.xlsx");
 
-        Octopus.writeOneSheet(os, config, "test", applicantsList);
-    }
+		Config config = new AnnotationConfigFactory(Applicants.class).getConfig();
+
+		Octopus.writeOneSheet(os, config, "test", applicantsList);
+	}
+
 }

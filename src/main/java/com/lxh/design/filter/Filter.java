@@ -8,5 +8,7 @@ package com.lxh.design.filter;
  * @Date 2018/2/22
  */
 public interface Filter {
-    public void execute(String request);
+
+	public void execute(String request);
+
 }

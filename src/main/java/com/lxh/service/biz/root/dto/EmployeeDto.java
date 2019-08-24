@@ -1,5 +1,6 @@
-package com.lxh.service.biz.root.entity;
+package com.lxh.service.biz.root.dto;
 
+import com.lxh.service.biz.root.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -15,7 +16,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-public class Employee extends BaseEntity {
+public class EmployeeDto extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 

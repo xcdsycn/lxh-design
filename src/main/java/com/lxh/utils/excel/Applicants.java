@@ -16,23 +16,23 @@ import java.util.Date;
  */
 @Data
 @NoArgsConstructor
-@Sheet(formatters = {
-        @Formatter(target = BigDecimal.class, format = BigDecimalFormatter.class),
-})
+@Sheet(formatters = { @Formatter(target = BigDecimal.class, format = BigDecimalFormatter.class), })
 public class Applicants {
-    @Field(description = "Value", color = "#74f441", width = 50)
-    private int id;
 
-    @Field(description = "Name", fontSize = 20, border = "0,2,0,2", borderColor = ",#4242f4,,#4242f4")
-    private String name;
+	@Field(description = "Value", color = "#74f441", width = 50)
+	private int id;
 
-    @Header(description = "Job", headerColor = "#4286f4")
-    private Job job;
+	@Field(description = "Name", fontSize = 20, border = "0,2,0,2", borderColor = ",#4242f4,,#4242f4")
+	private String name;
 
-    @Field(description = "Entry Date", dateFormat = "yyyy-MM-dd")
-    private Date entryDate;
+	@Header(description = "Job", headerColor = "#4286f4")
+	private Job job;
 
-    @Field(description = "Working/Leaved", options = "Working|Leaved",
-            formatter = com.lxh.utils.excel.formatter.WorkingFormatter.class, color = "#42f4b9")
-    private boolean working = true;
+	@Field(description = "Entry Date", dateFormat = "yyyy-MM-dd")
+	private Date entryDate;
+
+	@Field(description = "Working/Leaved", options = "Working|Leaved",
+			formatter = com.lxh.utils.excel.formatter.WorkingFormatter.class, color = "#42f4b9")
+	private boolean working = true;
+
 }

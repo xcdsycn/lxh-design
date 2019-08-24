@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @MapperScan("com.lxh.service.biz.root.mapper")
 public class ApplicationDesign {
 
-    @RequestMapping("/")
-    String home() {
-        return "Hello World!";
-    }
+	@RequestMapping("/")
+	String home() {
+		return "Hello World!";
+	}
 
+	public static void main(String[] args) {
+		SpringApplication.run(ApplicationDesign.class, args);
+	}
 
-    public static void main(String[] args) {
-        SpringApplication.run(ApplicationDesign.class, args);
-    }
 }

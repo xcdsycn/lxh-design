@@ -14,12 +14,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Job {
-    @Header(description = "Company Name")
-    private Company company;
 
-    @Field(description = "JD")
-    private String JobDescription;
+	@Header(description = "Company Name")
+	private Company company;
 
-    @Field(description = "Rank", color = "#f44271", foregroundColor = "#eaeae5")
-    private String rank;
+	@Field(description = "JD")
+	private String JobDescription;
+
+	@Field(description = "Rank", color = "#f44271", foregroundColor = "#eaeae5")
+	private String rank;
+
 }

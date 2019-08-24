@@ -8,7 +8,9 @@ package com.lxh.classloader.test;
  * @Date 2018/5/12
  */
 public class Red extends Color {
-    public Red() {
-        System.out.println("Red is loaded by "+this.getClass().getClassLoader());
-    }
+
+	public Red() {
+		System.out.println("Red is loaded by " + this.getClass().getClassLoader());
+	}
+
 }

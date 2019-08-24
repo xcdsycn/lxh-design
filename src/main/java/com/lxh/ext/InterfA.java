@@ -8,5 +8,7 @@ package com.lxh.ext;
  * @Date 2018/5/9
  */
 public interface InterfA {
-    void test();
+
+	void test();
+
 }

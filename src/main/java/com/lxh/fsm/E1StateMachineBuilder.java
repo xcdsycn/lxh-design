@@ -15,30 +15,31 @@ import java.util.EnumSet;
 
 @Component
 public class E1StateMachineBuilder {
-    private final static String MACHINEID = "orderMachine";
 
-    public StateMachine<States1, Events1> buildE1(BeanFactory beanFactory) throws Exception {
-        StateMachineBuilder.Builder<States1, Events1> builder = StateMachineBuilder.builder();
+	private final static String MACHINEID = "orderMachine";
 
-        builder.configureConfiguration().withConfiguration().autoStartup(true).listener(listenerSheet()).machineId(MACHINEID);
+	public StateMachine<States1, Events1> buildE1(BeanFactory beanFactory) throws Exception {
+		StateMachineBuilder.Builder<States1, Events1> builder = StateMachineBuilder.builder();
 
-        builder.configureStates().withStates().initial(States1.SI).states(EnumSet.allOf(States1.class));
+		builder.configureConfiguration().withConfiguration().autoStartup(true).listener(listenerSheet())
+				.machineId(MACHINEID);
 
-        builder.configureTransitions().withExternal().source(States1.SI).target(States1.S1).event(Events1.E1).action(new E1Action1())
-                .and()
-                .withExternal().source(States1.S1).target(States1.S2).event(Events1.E2);
-        return builder.build();
-    }
+		builder.configureStates().withStates().initial(States1.SI).states(EnumSet.allOf(States1.class));
 
+		builder.configureTransitions().withExternal().source(States1.SI).target(States1.S1).event(Events1.E1)
+				.action(new E1Action1()).and().withExternal().source(States1.S1).target(States1.S2).event(Events1.E2);
+		return builder.build();
+	}
 
-    @Bean
-    public StateMachineListener<States1, Events1> listenerSheet() {
-        return new StateMachineListenerAdapter<States1, Events1>() {
-            @Override
-            public void stateChanged(State<States1, Events1> from, State<States1, Events1> to) {
-                System.out.println("State change to " + to.getId());
-            }
-        };
+	@Bean
+	public StateMachineListener<States1, Events1> listenerSheet() {
+		return new StateMachineListenerAdapter<States1, Events1>() {
+			@Override
+			public void stateChanged(State<States1, Events1> from, State<States1, Events1> to) {
+				System.out.println("State change to " + to.getId());
+			}
+		};
 
-    }
+	}
+
 }

@@ -6,7 +6,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author lxh
@@ -17,17 +17,16 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class UserFlyway extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * ??
-     */
-    private String name;
+	/**
+	 * ??
+	 */
+	private String name;
 
-    /**
-     * ??
-     */
-    private Integer age;
-
+	/**
+	 * ??
+	 */
+	private Integer age;
 
 }

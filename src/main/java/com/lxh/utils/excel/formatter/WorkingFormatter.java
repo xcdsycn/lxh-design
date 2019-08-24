@@ -5,16 +5,18 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
 public class WorkingFormatter extends AbstractFormatter<Boolean> {
-    public WorkingFormatter() {
-    }
 
-    @Override
-    public Boolean parseImpl(String str) throws Exception {
-        return "Working".equals(str);
-    }
+	public WorkingFormatter() {
+	}
 
-    @Override
-    public String format(Boolean aBoolean) {
-        return aBoolean ? "Working" : "Leaved";
-    }
+	@Override
+	public Boolean parseImpl(String str) throws Exception {
+		return "Working".equals(str);
+	}
+
+	@Override
+	public String format(Boolean aBoolean) {
+		return aBoolean ? "Working" : "Leaved";
+	}
+
 }

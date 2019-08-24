@@ -15,35 +15,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompanyExample {
-    List<Company> companies;
 
-    /**
-     * make testing data
-     */
-    @Before
-    public void prepare() {
-        companies = new ArrayList<>();
-        DataFactory df = new DataFactory();
-        for (int i = 0; i < df.getNumberBetween(5, 10); i++) {
-            companies.add(new Company(df.getBusinessName(), new Address(df.getCity(), df.getAddress())));
-        }
-    }
+	List<Company> companies;
 
-    @Test
-    public void export() throws FileNotFoundException {
+	/**
+	 * make testing data
+	 */
+	@Before
+	public void prepare() {
+		companies = new ArrayList<>();
+		DataFactory df = new DataFactory();
+		for (int i = 0; i < df.getNumberBetween(5, 10); i++) {
+			companies.add(new Company(df.getBusinessName(), new Address(df.getCity(), df.getAddress())));
+		}
+	}
 
-        //where to export
-        String rootPath = this.getClass().getClassLoader().getResource("").getPath();
-        FileOutputStream os = new FileOutputStream(rootPath + "/company.xlsx");
+	@Test
+	public void export() throws FileNotFoundException {
 
-        //read config from company.xml
-        InputStream is = this.getClass().getClassLoader().getResourceAsStream("company.xml");
-        Config config = new XmlConfigFactory(is).getConfig();
+		// where to export
+		String rootPath = this.getClass().getClassLoader().getResource("").getPath();
+		FileOutputStream os = new FileOutputStream(rootPath + "/company.xlsx");
 
-        try {
-            Octopus.writeOneSheet(os, config, "company", companies);
-        } catch (IOException e) {
-            System.out.println("export failed");
-        }
-    }
+		// read config from company.xml
+		InputStream is = this.getClass().getClassLoader().getResourceAsStream("company.xml");
+		Config config = new XmlConfigFactory(is).getConfig();
+
+		try {
+			Octopus.writeOneSheet(os, config, "company", companies);
+		}
+		catch (IOException e) {
+			System.out.println("export failed");
+		}
+	}
+
 }
