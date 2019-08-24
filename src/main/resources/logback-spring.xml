@@ -15,7 +15,7 @@
             <onMismatch>ACCEPT</onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>log/leasing.info.%d.log</fileNamePattern>
+            <fileNamePattern>log/lxh.info.%d.log</fileNamePattern>
             <!--<maxHistory>30</maxHistory>-->
             <!--<timeBasedFileNamingAndTriggeringPolicy  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
                 <!--<maxFileSize>10MB</maxFileSize>-->
@@ -42,15 +42,15 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
-            <fileNamePattern>log/leasing.error.%d.log</fileNamePattern>
+            <fileNamePattern>log/lxh.error.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />
-        <appender-ref ref="fileInfoLog" />
-        <appender-ref ref="fileErrorLog" />
+        <!--<appender-ref ref="fileInfoLog" />-->
+        <!--<appender-ref ref="fileErrorLog" />-->
     </root>
-    <logger name="com.dfocus.service.leasing.dao" level="${sqlLevel}"/>
+    <logger name="com.lxh.service.dao" level="${sqlLevel}"/>
 </configuration>
