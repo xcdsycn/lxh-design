@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @SpringBootApplication
-@MapperScan("com.lxh..mapper")
+@MapperScan("com.lxh.service.biz.root.mapper")
 public class ApplicationDesign {
 
     @RequestMapping("/")
