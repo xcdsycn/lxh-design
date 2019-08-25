@@ -6,8 +6,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class BeanMapperTest extends ApplicationTests {
+
 	@Autowired
-	private  BeanMapper beanMapper;
+	private BeanMapper beanMapper;
 
 	public BeanMapperTest() {
 	}

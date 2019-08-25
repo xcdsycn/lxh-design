@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = ApplicationDesign.class)
 public class ApplicationTests {
 
-    public ApplicationTests() {
-    }
+	public ApplicationTests() {
+	}
+
 }
