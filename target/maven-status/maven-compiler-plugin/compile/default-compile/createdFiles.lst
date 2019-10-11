@@ -1,6 +1,9 @@
 com/lxh/thread/delayedqueue/QueueMain$2.class
+com/lxh/design/abfactory/shape/Rectangle.class
 com/lxh/thread/deadlock/unlock/UnLockTest.class
+com/lxh/design/abfactory/color/Green.class
 com/lxh/service/biz/root/entity/Employee.class
+com/lxh/design/abfactory/color/Red.class
 com/lxh/stream/Exmaple.class
 com/lxh/config/StateMachineConfig$1.class
 com/lxh/utils/excel/Address.class
@@ -11,11 +14,13 @@ com/lxh/design/filter/DebugFilter.class
 com/lxh/service/biz/root/dto/EmployeeDto.class
 com/lxh/thread/delayedqueue/DelayedElement.class
 com/lxh/function/notemplet/FunInt.class
+com/lxh/design/abfactory/color/Blue.class
 com/lxh/constants/Events1.class
 com/lxh/thread/philosopher/PhilosopherTest.class
 com/lxh/thread/deadlock/TestLock$2.class
 com/lxh/thread/delayedqueue/Message.class
 com/lxh/service/biz/root/controller/UserFlywayController.class
+com/lxh/design/abfactory/shape/intf/Shape.class
 com/lxh/lamda/OlderService$Calculate.class
 com/lxh/thread/deadlock/unlock/LockBb.class
 com/lxh/service/biz/root/mapper/UserFlywayMapper.class
@@ -40,6 +45,7 @@ com/lxh/design/state/NotPayState.class
 com/lxh/service/biz/root/mapper/EmployeeMapper.class
 com/lxh/service/biz/root/service/impl/UserFlywayServiceImpl.class
 com/lxh/design/state/ClientApplicationMain.class
+com/lxh/design/abfactory/shape/Circle.class
 com/lxh/design/state/AbstractState.class
 com/lxh/design/filter/Target.class
 com/lxh/design/filter/AuthenticationFilter.class
@@ -52,8 +58,10 @@ com/lxh/design/state/State.class
 com/lxh/thread/delayedqueue/QueueMain$1.class
 com/lxh/constants/Events.class
 com/lxh/ext/AbstractA.class
+com/lxh/design/abfactory/AbstractFactory.class
 com/lxh/fsm/E1StateMachineBuilder$1.class
 com/lxh/thread/philosopher/Chopsticks.class
+com/lxh/design/abfactory/ShapeFactory.class
 com/lxh/utils/excel/file/DiskFileHandler.class
 com/lxh/service/biz/root/controller/BaseController.class
 com/lxh/service/biz/root/transfer/BeanMapper.class
@@ -78,6 +86,7 @@ com/lxh/utils/excel/Company.class
 com/lxh/service/biz/root/controller/EmployeeController.class
 com/lxh/fsm/E1Action.class
 com/lxh/design/filter/main/InterceptingFilterDemo.class
+com/lxh/design/abfactory/shape/Square.class
 com/lxh/utils/excel/Applicants.class
 com/lxh/function/notemplet/Automobile.class
 com/lxh/thread/basic/cyclicbarrier/CyclicBarrierExample2.class
@@ -93,5 +102,6 @@ com/lxh/thread/readwrite/SimpleExample$Writer.class
 com/lxh/service/biz/root/transfer/BeanMapperImpl.class
 com/lxh/lamda/ReferenceTest$Calculate.class
 com/lxh/lamda/OlderService.class
+com/lxh/design/abfactory/color/intf/Color.class
 com/lxh/design/state/GenerateState.class
 com/lxh/constants/States.class

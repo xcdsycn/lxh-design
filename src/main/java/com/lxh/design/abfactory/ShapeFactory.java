@@ -1,0 +1,40 @@
+package com.lxh.design.abfactory;
+
+import com.lxh.design.abfactory.color.intf.Color;
+import com.lxh.design.abfactory.shape.Circle;
+import com.lxh.design.abfactory.shape.Rectangle;
+import com.lxh.design.abfactory.shape.Square;
+import com.lxh.design.abfactory.shape.intf.Shape;
+
+/**
+ * @author lxh
+ */
+public class ShapeFactory extends AbstractFactory {
+
+	@Override
+	Color getColor(String shapeType) {
+		return null;
+
+	}
+
+	@Override
+	Shape getShape(String shapeType) {
+		if (shapeType == null) {
+			return null;
+		}
+		if (shapeType.equalsIgnoreCase("CIRCLE")) {
+			return new Circle();
+
+		}
+		else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
+			return new Rectangle();
+
+		}
+		else if (shapeType.equalsIgnoreCase("SQUARE")) {
+			return new Square();
+		}
+
+		return null;
+	}
+
+}

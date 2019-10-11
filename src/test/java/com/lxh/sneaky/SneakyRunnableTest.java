@@ -7,12 +7,14 @@ import static org.junit.Assert.assertEquals;
 
 public class SneakyRunnableTest extends ApplicationTests {
 
-    @Test
+	@Test
 	public void run() {
 		try {
 			new SneakyRunnable().run();
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			assertEquals(InterruptedException.class, e.getStackTrace());
 		}
 	}
+
 }

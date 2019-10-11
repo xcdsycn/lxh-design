@@ -4,7 +4,9 @@
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/thread/readwrite/SimpleExample.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/thread/deadlock/unlock/LockBb.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/state/FeedBackState.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/color/Green.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/state/NotPayState.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/color/Red.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/controller/UserFlywayController.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/entity/UserFlyway.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/entity/Employee.java
@@ -14,6 +16,8 @@
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/thread/deadlock/lock/LockA.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/filter/main/InterceptingFilterDemo.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/utils/excel/formatter/WorkingFormatter.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/AbstractFactory.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/color/Blue.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/filter/FilterManager.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/function/templet/ConstrRefGen.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/service/impl/EmployeeServiceImpl.java
@@ -25,7 +29,9 @@
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/mapper/EmployeeMapper.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/config/StateMachineConfig.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/thread/deadlock/TestLock.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/ShapeFactory.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/fsm/EventConfig.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/shape/intf/Shape.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/constants/Events.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/classloader/test/Red.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/utils/excel/Company.java
@@ -36,6 +42,7 @@
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/stream/Exmaple.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/fsm/E1Action.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/classloader/test/Color.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/shape/Circle.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/filter/Filter.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/state/PublishState.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/function/notemplet/Automobile.java
@@ -60,12 +67,15 @@
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/function/templet/Automobile.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/state/StateEnum.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/mapper/UserFlywayMapper.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/shape/Rectangle.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/state/PaidState.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/utils/excel/file/FileHandler.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/service/impl/UserFlywayServiceImpl.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/shape/Square.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/service/biz/root/transfer/BeanMapper.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/constants/States1.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/function/templet/FuncInt.java
+/Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/abfactory/color/intf/Color.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/thread/philosopher/PhilosopherTest.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/utils/excel/Job.java
 /Users/lxh/Downloads/workspace/self/lxh-desgin/src/main/java/com/lxh/design/filter/Target.java
