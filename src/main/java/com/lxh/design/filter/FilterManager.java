@@ -8,20 +8,17 @@ package com.lxh.design.filter;
  * @Date 2018/2/22
  */
 public class FilterManager {
+    FilterChain filterChain;
 
-	FilterChain filterChain;
+    public FilterManager(Target target){
+        filterChain = new FilterChain();
+        filterChain.setTarget(target);
+    }
+    public void setFilter(Filter filter){
+        filterChain.addFilter(filter);
+    }
 
-	public FilterManager(Target target) {
-		filterChain = new FilterChain();
-		filterChain.setTarget(target);
-	}
-
-	public void setFilter(Filter filter) {
-		filterChain.addFilter(filter);
-	}
-
-	public void filterRequest(String request) {
-		filterChain.execute(request);
-	}
-
+    public void filterRequest(String request){
+        filterChain.execute(request);
+    }
 }

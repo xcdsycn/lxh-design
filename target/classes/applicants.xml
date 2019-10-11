@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root
+        class="com.lxh.utils.excel.Applicants">
+
+    <Field name="id"
+           description="Value"
+           color="#74f441"
+           width="50"
+    />
+
+    <Field name="name"
+           description="Name"
+           font-size="20"
+           border="0,2,0,2"
+           border-color=",#4242f4,,#4242f4"/>
+
+    <Header name="job" description="Job" header-color="#4286f4">
+        <Header name="company"
+                description="Company Name">
+            <Field name="name" description="Company Name"/>
+            <Header name="address" description="Address">
+                <Field name="city" description="City"/>
+                <Field name="detail" description="Detail"/>
+            </Header>
+        </Header>
+        <Field name="JobDescription" description="JD"/>
+        <Field name="rank"
+               description="Rank"
+               color="#f44271"
+               foreground-color="#eaeae5"/>
+    </Header>
+
+    <Field name="entryDate"
+           description="Entry Date"
+           date-format="yyyy-MM-dd"/>
+
+    <Field name="working"
+           description="Working/Leaved"
+           options="Working|Leaved"
+           formatter="com.lxh.utils.excel.formatter.WorkingFormatter"
+           color="#42f4b9"/>
+
+</Root>

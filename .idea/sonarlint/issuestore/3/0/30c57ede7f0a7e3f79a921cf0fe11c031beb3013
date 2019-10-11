@@ -1,0 +1,7 @@
+
+]squid:S2142,"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+"squid:ClassVariableVisibilityCheck"QMake chops a static final constant or non-public and provide accessors if needed.(Ž‡é»
+Bsquid:S1444"+Make this "public static chops" field final(Ž‡é»
+?squid:S1148-"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+4squid:S2386"Make this member "protected".(Ž‡é»
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ž‡é»

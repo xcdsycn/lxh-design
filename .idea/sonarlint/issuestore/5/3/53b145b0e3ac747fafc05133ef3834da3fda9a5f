@@ -1,0 +1,13 @@
+
+isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(±ÚÈÙ8‚—ßŽû,
+Osquid:S1602",Remove useless curly braces around statement(‡Âúúúÿÿÿÿ8í«²Žû,
+V
+squid:S106*"9Replace this use of System.out or System.err by a logger.(øÈý¾8¹­ŸŽû,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(éÜæ™8’Þ·Žû,
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(´Êúùúÿÿÿÿ8¹­ŸŽû,
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ºÄØ†ûÿÿÿÿ8¹­ŸŽû,
+Jsquid:S1602",Remove useless curly braces around statement(šêáÃ8’Þ·Žû,
+V
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ÔæªÄ8¹­ŸŽû,

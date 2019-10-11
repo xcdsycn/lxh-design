@@ -1,0 +1,65 @@
+#server
+server:
+  port: ${server_port:8080}
+
+#datasource
+spring.datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${db_host:localhost}:${db_port:3306}/${db_name:test}?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&maxAllowedPacket=67108864
+    username: ${db_user:root}
+    password: ${db_pass:123}
+    #hikari pool
+    hikari:
+      poolName: DF_DB_CONN_POOL
+      minimumIdle: 5
+      maximumPoolSize: ${max_pool_size:20}
+      maxLifetime: 1800000
+      connectionTimeout: 30000
+      validationTimeout: 5000
+      idleTimeout: 600000
+      hikari.connection-test-query: select 1
+  #jackson
+spring.jackson:
+  serialization:
+    write-dates-as-timestamps: true
+  default-property-inclusion: always
+
+
+
+
+
+  #flywaydb
+spring.flyway:
+    enabled: true
+    url: jdbc:mysql://localhost:3306/
+    schemas: test
+    user: root
+    password: 123
+    baseline-on-migrate: true
+#swagger
+springfox:
+  documentation:
+    swagger:
+      enable: ${enable_swagger:true}
+      v2:
+        path: /api-docs
+
+  #logback
+logging:
+  config: classpath:logback-spring.xml
+log:
+  sql:
+    level: ${log_sql_level:info}
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params:
+    count: countSql
+
+#mybatis plus
+
+
+

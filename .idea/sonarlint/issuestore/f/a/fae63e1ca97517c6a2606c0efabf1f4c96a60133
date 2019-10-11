@@ -1,0 +1,15 @@
+
+asquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(æ´Ê†8Üú‹îÚ,
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Üú‹îÚ,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(óöÀ8Üú‹îÚ,
+dsquid:S2184"FCast one of the operands of this multiplication operation to a "long".(æ´Ê†8Üú‹îÚ,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ê‘”Ìøÿÿÿÿ8Üú‹îÚ,
+Esquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8Üú‹îÚ,
+V
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(÷¨‡“8Üú‹îÚ,
+fsquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(üŠçêûÿÿÿÿ8Üú‹îÚ,
+Isquid:S1860"&Synchronize on a new "Object" instead.(³óœ¾øÿÿÿÿ8í¹õû,
+Dsquid:S1860"&Synchronize on a new "Object" instead.(œŞĞØ8í¹õû,

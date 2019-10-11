@@ -8,9 +8,7 @@ package com.lxh.design.filter;
  * @Date 2018/2/22
  */
 public class Target {
-
-	public void execute(String request) {
-		System.out.println("Executing request: " + request);
-	}
-
+    public void execute(String request){
+        System.out.println("Executing request: " + request);
+    }
 }

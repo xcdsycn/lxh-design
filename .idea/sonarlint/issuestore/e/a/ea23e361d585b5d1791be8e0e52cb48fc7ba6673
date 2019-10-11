@@ -1,0 +1,8 @@
+
+U
+squid:S106/"9Replace this use of System.out or System.err by a logger.(з▄ў]8■Э╙М√,
+[
+squid:S106*"9Replace this use of System.out or System.err by a logger.(н╟СЄ■    8■Э╙М√,
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(║─╪Ж√    8■Э╙М√,
+Fsquid:S1148!"#Use a logger to log this exception.(А╔╘Е¤    8■Э╙М√,
+dsquid:S2142 "FEither re-interrupt this method or rethrow the "InterruptedException".(фа╣А8■Э╙М√,

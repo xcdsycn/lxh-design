@@ -1,0 +1,30 @@
+
+?squid:S1604c"(Make this anonymous inner class a lambda(ÉãÃ®
+>squid:S2189e""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+O
+squid:S106&"9Replace this use of System.out or System.err by a logger.(Îªêã
+?squid:S1604M"(Make this anonymous inner class a lambda(ÉãÃ®
+T
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(éÂê»ıÿÿÿÿ
+bsquid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(ƒÅó°
+O
+squid:S106q"9Replace this use of System.out or System.err by a logger.(šºÎß
+?squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>squid:S2189P""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+]squid:S2142>"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+?squid:S1148)"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T
+squid:S106<"9Replace this use of System.out or System.err by a logger.(Öâ»±üÿÿÿÿ
+?squid:S1148?"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T
+squid:S106r"9Replace this use of System.out or System.err by a logger.(³¼Ëáøÿÿÿÿ
+usquid:S2293b"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÒÆ‘üÿÿÿÿ
+]squid:S2142l"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+?squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+]squid:S2142("FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").( ìøŞûÿÿÿÿ
+>squid:S21899""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+>squid:S2189#""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+?squid:S16047"(Make this anonymous inner class a lambda(ÉãÃ®
+bsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(˜éĞ¨
+]squid:S2142T"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€

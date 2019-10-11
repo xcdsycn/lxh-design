@@ -3,172 +3,147 @@ package com.lxh.thread.readwrite;
  * Created by lxh on 2018/6/22.
  */
 
+
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 通过信号量 + 原子变量的方式达到 信号量:用来设置读、写线程数量，让线程获取标识 原子变量：用来计数：读、写线程的个数，用来让线程判断是否可以尝试获取信号量 1.
- * 当读的数量为 0 的时候， 尝试获取写的信号量（1），才可以写， 写的数量由信号量控制 2. 当写的数量为 0 ， 尝试获取读的信号量（2），才可以读，读的数量由信号量控制
- *
  * @author lxh
  * @Date 2018/6/22
  */
 public class SimpleExample {
 
-	private static SimpleExample threadSync;
+    private static SimpleExample threadSync;
+    private static Thread t1, t2, t3, t4, t5;
+    private static final Random rand = new Random();
+    private static Semaphore sm = new Semaphore(2);// 信号量 允许2个线程 true表示先进先出
+    private static Semaphore wsm = new Semaphore(1);// 信号量 允许1个线程
+    String text = "Beginning of the Book";// 代表书本
+    AtomicInteger readerCount = new AtomicInteger(0); // 记录当前读者数量
+    AtomicInteger writerCount = new AtomicInteger(0); // 记录当前写者数量
 
-	private static Thread t1, t2, t3, t4, t5;
+    // 随机休眠一定时间
+    private void busy() {
+        try {
+            Thread.sleep(rand.nextInt(1000) + 1000);
+        } catch (InterruptedException e) {
+        }
+    }
 
-	private static final Random rand = new Random();
+    // 写函数
+    void write(String sentence) {
+        System.out.println(Thread.currentThread().getName()
+                + " started to WRITE");
+        text += "\n" + sentence;
+        System.out.println(text);
+        System.out.println("End of Book\n");
+        System.out.println(Thread.currentThread().getName()
+                + " finished WRITING");
+    }
 
-	/** 信号量 读 允许2个线程 true表示先进先出 **/
-	private static Semaphore rsm = new Semaphore(2);
+    // 读函数
+    void read() {
 
-	/** 信号量 写 允许1个线程 **/
-	private static Semaphore wsm = new Semaphore(1);
+        System.out.println("\n" + Thread.currentThread().getName()
+                + " started to READ");
+        // System.out.println(text);
+        // System.out.println("End of Book\n");
 
-	/** 代表书本 **/
-	String text = "Beginning of the Book";
+    }
 
-	/** 记录当前读者数量 **/
-	AtomicInteger readerCount = new AtomicInteger(0);
+    // 写者
+    private class Writer implements Runnable {
 
-	/** 记录当前写者数量 **/
-	AtomicInteger writerCount = new AtomicInteger(0);
+        SimpleExample ts;
 
-	/**
-	 * 随机休眠一定时间
-	 */
-	private void busy() {
-		try {
-			Thread.sleep(rand.nextInt(1000) + 1000);
-		}
-		catch (InterruptedException e) {
-		}
-	}
+        Writer(SimpleExample ts) {
+            super();
+            this.ts = ts;
 
-	/**
-	 * 写函数
-	 */
-	void write(String sentence) {
-		System.out.println(Thread.currentThread().getName() + " started to WRITE");
-		text += "\n" + sentence;
-		System.out.println(text);
-		System.out.println("End of Book\n");
-		System.out.println(Thread.currentThread().getName() + " finished WRITING");
-	}
+        }
 
-	/**
-	 * read
-	 */
-	void read() {
+        @Override
+        public void run() {
+            while (true) {
+                if (readerCount.get() == 0) { // 当没有读者时才 可以写
+                    try {
+//                        System.out.println("write---readerCount= "+readerCount.get());
+//                        System.out.println("write---writerCount= "+writerCount.get());
+                        wsm.acquire(); // 信号量获取允许
+                        writerCount.getAndIncrement();
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                    String new_sentence = "\tnew line in Book";
+                    busy();
+                    ts.write(new_sentence);
+                    wsm.release(); // 信号量释放
+                    writerCount.getAndDecrement();
 
-		System.out.println("\n" + Thread.currentThread().getName() + " started to READ");
-		// System.out.println(text);
-		// System.out.println("End of Book\n");
+                    busy();
 
-	}
+                }
+            } // of while
+        }
+    }
 
-	/**
-	 * writer
-	 */
-	private class Writer implements Runnable {
+    // 读者
+    private class Reader implements Runnable {
 
-		SimpleExample ts;
+        SimpleExample ts;
 
-		Writer(SimpleExample ts) {
-			super();
-			this.ts = ts;
+        Reader(SimpleExample ts) {
+            super();
+            this.ts = ts;
 
-		}
+        }
 
-		@Override
-		public void run() {
-			while (true) {
-				if (readerCount.get() == 0) { // 当没有读者时才 可以写
-					try {
-						// System.out.println("write---readerCount= "+readerCount.get());
-						// System.out.println("write---writerCount= "+writerCount.get());
-						wsm.acquire(); // 信号量获取允许
-						writerCount.getAndIncrement();
-					}
-					catch (InterruptedException ex) {
-						ex.printStackTrace();
-					}
-					String new_sentence = "\tnew line in Book";
-					busy();
-					ts.write(new_sentence);
-					wsm.release(); // 信号量释放
-					writerCount.getAndDecrement();
+        @Override
+        public void run() {
+            while (true) {
+                if (writerCount.get() == 0) { // 没有写者时 才可以读
+                    try {
+//                        System.out.println("Read---readerCount= "+readerCount.get());
+//                        System.out.println("Read---writerCount= "+writerCount.get());
+                        sm.acquire(); // 读者获取允许
+                        readerCount.getAndIncrement();
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                    // System.out.print(t);
 
-					busy();
+                    ts.read();
+                    busy();
+                    System.out.println(Thread.currentThread().getName()
+                            + " end of read");
+                    sm.release(); // 释放允许
+                    readerCount.getAndDecrement();
+                    busy();
+                }
+            } // of while
+        }
+    }
 
-				}
-			} // of while
-		}
+    // 创建两个读者 一个写者
+    public void startThreads() {
+        SimpleExample ts = new SimpleExample();
+        t1 = new Thread(new Writer(ts), "Writer # 1");
+        t2 = new Thread(new Writer(ts), "Writer # 2");
+        t3 = new Thread(new Reader(ts), "Reader # 1");
+        t4 = new Thread(new Reader(ts), "Reader # 2");
+        // t5 = new Thread(new Reader(ts), "Reader # 3");
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+        // t5.start();
+    }
 
-	}
-
-	// 读者
-	private class Reader implements Runnable {
-
-		SimpleExample ts;
-
-		Reader(SimpleExample ts) {
-			super();
-			this.ts = ts;
-
-		}
-
-		@Override
-		public void run() {
-			while (true) {
-				if (writerCount.get() == 0) { // 没有写者时 才可以读
-					try {
-						// System.out.println("Read---readerCount= "+readerCount.get());
-						// System.out.println("Read---writerCount= "+writerCount.get());
-						rsm.acquire(); // 读者获取允许
-						readerCount.getAndIncrement();
-					}
-					catch (InterruptedException ex) {
-						ex.printStackTrace();
-					}
-					// System.out.print(t);
-
-					ts.read();
-					busy();
-					System.out.println(Thread.currentThread().getName() + " end of read");
-					rsm.release(); // 释放允许
-					readerCount.getAndDecrement();
-					busy();
-				}
-			} // of while
-		}
-
-	}
-
-	/**
-	 * 创建两个读者 两个写者
-	 */
-	public void startThreads() {
-		SimpleExample ts = new SimpleExample();
-		t1 = new Thread(new Writer(ts), "Writer # 1");
-		t2 = new Thread(new Writer(ts), "Writer # 2");
-		t3 = new Thread(new Reader(ts), "Reader # 1");
-		t4 = new Thread(new Reader(ts), "Reader # 2");
-		// t5 = new Thread(new Reader(ts), "Reader # 3");
-		t1.start();
-		t2.start();
-		t3.start();
-		t4.start();
-		// t5.start();
-	}
-
-	public static void main(String[] args) {
-		threadSync = new SimpleExample();
-		System.out.println("Lets begin...\n");
-		threadSync.startThreads();
-	}
+    public static void main(String[] args) {
+        threadSync = new SimpleExample();
+        System.out.println("Lets begin...\n");
+        threadSync.startThreads();
+    }
 
 }

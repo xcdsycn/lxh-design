@@ -11,24 +11,21 @@ import java.util.List;
  * @Date 2018/2/22
  */
 public class FilterChain {
+    private List<Filter> filters = new ArrayList<Filter>();
+    private Target target;
 
-	private List<Filter> filters = new ArrayList<Filter>();
+    public void addFilter(Filter filter){
+        filters.add(filter);
+    }
 
-	private Target target;
+    public void execute(String request){
+        for (Filter filter : filters) {
+            filter.execute(request);
+        }
+        target.execute(request);
+    }
 
-	public void addFilter(Filter filter) {
-		filters.add(filter);
-	}
-
-	public void execute(String request) {
-		for (Filter filter : filters) {
-			filter.execute(request);
-		}
-		target.execute(request);
-	}
-
-	public void setTarget(Target target) {
-		this.target = target;
-	}
-
+    public void setTarget(Target target){
+        this.target = target;
+    }
 }

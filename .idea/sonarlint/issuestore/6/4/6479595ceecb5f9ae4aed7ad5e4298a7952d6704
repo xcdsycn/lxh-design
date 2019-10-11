@@ -1,0 +1,45 @@
+
+:squid:S1148^"#Use a logger to log this exception.(Ç’Çê
+>squid:S2189z""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+<squid:S1659" Declare "t2" on a separate line.(‡ÊïÉûÿÿÿÿ
+O
+squid:S1067"9Replace this use of System.out or System.err by a logger.(ê¯î£
+asquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ÐžÇ
+;squid:S1148‚"#Use a logger to log this exception.(Ç’Çê
+isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ÅÔÍ
+Ssquid:S2696˜"6Make the enclosing method "static" or remove this set.(Æ…‘Éøÿÿÿÿ
+<squid:S1659" Declare "t3" on a separate line.(‡ÊïÉûÿÿÿÿ
+csquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(œÂùÝ
+Asquid:S00108*")Either remove or fill this block of code.(ä ¹€
+Bsquid:S1068"&Remove this unused "t5" private field.(‡ÊïÉûÿÿÿÿ
+O
+squid:S1066"9Replace this use of System.out or System.err by a logger.(¸£Áö
+Wsquid:S2184)"@Cast one of the operands of this addition operation to a "long".(ææ¢æ
+usquid:S1450"YRemove the "threadSync" field and declare it as a local variable in the relevant methods.(Ïû÷ûúÿÿÿÿ
+Ssquid:S2696—"6Make the enclosing method "static" or remove this set.(ùøÙ›ùÿÿÿÿ
+csquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(è®ã¶øÿÿÿÿ
+csquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(æ®äá
+<squid:S1659" Declare "t4" on a separate line.(‡ÊïÉûÿÿÿÿ
+O
+squid:S1065"9Replace this use of System.out or System.err by a logger.(”“î€
+gsquid:CommentedOutCodeLineY"<This block of commented-out lines of code should be removed.(¦üí†þÿÿÿÿ
+]squid:S2142*"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Nsquid:S2696™"6Make the enclosing method "static" or remove this set.(ò²ë
+csquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(°ÄÊ¼
+O
+squid:S1062"9Replace this use of System.out or System.err by a logger.(ê¯î£
+>squid:S2189V""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+bsquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(ñ‹äý
+msquid:S1450"QRemove the "t2" field and declare it as a local variable in the relevant methods.(‡ÊïÉûÿÿÿÿ
+msquid:S1450"QRemove the "t4" field and declare it as a local variable in the relevant methods.(‡ÊïÉûÿÿÿÿ
+T
+squid:S106@"9Replace this use of System.out or System.err by a logger.(Õ©ûÿÿÿÿÿ
+P
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(ê¯î£
+Ssquid:S2696š"6Make the enclosing method "static" or remove this set.(êÇÁÿÿÿÿÿ
+bsquid:S2142]"FEither re-interrupt this method or rethrow the "InterruptedException".(è®ã¶øÿÿÿÿ
+P
+squid:S106¥"9Replace this use of System.out or System.err by a logger.(æ€ù
+<squid:S1659" Declare "t5" on a separate line.(‡ÊïÉûÿÿÿÿ
+msquid:S1450"QRemove the "t3" field and declare it as a local variable in the relevant methods.(‡ÊïÉûÿÿÿÿ
+msquid:S1450"QRemove the "t1" field and declare it as a local variable in the relevant methods.(‡ÊïÉûÿÿÿÿ

@@ -1,0 +1,13 @@
+
+Esquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8É”€îÚ,
+Fsquid:S16046"(Make this anonymous inner class a lambda(ğ‹Ê¾8É”€îÚ,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê†½Ö8É”€îÚ,
+©%squid:RedundantThrowsDeclarationCheck*"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8âÛ€îÚ,
+`squid:S2886""BSynchronize this method to match the synchronization on "getName".(Ò’Š¯8É”€îÚ,
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8É”€îÚ,
+Fsquid:S1604/"(Make this anonymous inner class a lambda(ğ‹Ê¾8É”€îÚ,
+fsquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»ãßºøÿÿÿÿ8É”€îÚ,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ª†šûÿÿÿÿ8É”€îÚ,
+dsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8É”€îÚ,

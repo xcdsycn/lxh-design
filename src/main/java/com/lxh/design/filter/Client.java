@@ -8,15 +8,13 @@ package com.lxh.design.filter;
  * @Date 2018/2/22
  */
 public class Client {
+    FilterManager filterManager;
 
-	FilterManager filterManager;
+    public void setFilterManager(FilterManager filterManager){
+        this.filterManager = filterManager;
+    }
 
-	public void setFilterManager(FilterManager filterManager) {
-		this.filterManager = filterManager;
-	}
-
-	public void sendRequest(String request) {
-		filterManager.filterRequest(request);
-	}
-
+    public void sendRequest(String request){
+        filterManager.filterRequest(request);
+    }
 }
