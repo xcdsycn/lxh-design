@@ -13,7 +13,7 @@ public class SneakyRunnableTest extends ApplicationTests {
 			new SneakyRunnable().run();
 		}
 		catch (Exception e) {
-			assertEquals(InterruptedException.class, e.getStackTrace());
+			assertEquals(InterruptedException.class, e.getClass());
 		}
 	}
 
