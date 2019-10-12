@@ -14,7 +14,8 @@ public class Chopsticks {
 
 	public static List<Boolean> chops = new ArrayList<Boolean>();
 	static {
-		chops.add(false); // 为了方便计算，第一个不会参与计算
+		chops.add(false);
+		// 为了方便计算，第一个不会参与计算
 		chops.add(false);
 		chops.add(false);
 		chops.add(false);

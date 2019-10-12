@@ -14,7 +14,8 @@ public class LockAa implements Runnable {
 					System.out.println(new Date().toString() + " LockA 锁住 obj1");
 					if (UnLockTest.a2.tryAcquire(1, TimeUnit.SECONDS)) {
 						System.out.println(new Date().toString() + " LockA 锁住 obj2");
-						Thread.sleep(1000); // do something
+						Thread.sleep(1000);
+						// do something
 						System.out.println("===> exec LockAa ...");
 					}
 					else {
@@ -26,7 +27,8 @@ public class LockAa implements Runnable {
 				}
 				UnLockTest.a1.release(); // 释放
 				UnLockTest.a2.release();
-				Thread.sleep(1000); // 马上进行尝试，现实情况下do something是不确定的
+				Thread.sleep(1000);
+				// 马上进行尝试，现实情况下do something是不确定的
 			}
 		}
 		catch (Exception e) {

@@ -8,6 +8,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 两个信息号量，一个读、一个写就可以完成读写者问题
  * @author lxh
  * @Date 2018/6/22
  */
@@ -19,17 +20,25 @@ public class SimpleExample {
 
 	private static final Random rand = new Random();
 
-	private static Semaphore sm = new Semaphore(2);// 信号量 允许2个线程 true表示先进先出
+	private static Semaphore sm = new Semaphore(2);
+	// 信号量 允许2个线程 true表示先进先出
 
-	private static Semaphore wsm = new Semaphore(1);// 信号量 允许1个线程
+	private static Semaphore wsm = new Semaphore(1);
+	// 信号量 允许1个线程
 
-	String text = "Beginning of the Book";// 代表书本
+	String text = "Beginning of the Book";
+	// 代表书本
 
-	AtomicInteger readerCount = new AtomicInteger(0); // 记录当前读者数量
+	AtomicInteger readerCount = new AtomicInteger(0);
+	// 记录当前读者数量，只为了单纯输出日志用
 
-	AtomicInteger writerCount = new AtomicInteger(0); // 记录当前写者数量
+	AtomicInteger writerCount = new AtomicInteger(0);
+	// 记录当前写者数量， 只为了单纯输出日志用
 
-	// 随机休眠一定时间
+
+	/**
+	 * 随机休眠一定时间
+	 */
 	private void busy() {
 		try {
 			Thread.sleep(rand.nextInt(1000) + 1000);
@@ -38,7 +47,9 @@ public class SimpleExample {
 		}
 	}
 
-	// 写函数
+	/**
+	 * 写函数
+ 	 */
 	void write(String sentence) {
 		System.out.println(Thread.currentThread().getName() + " started to WRITE");
 		text += "\n" + sentence;
@@ -47,7 +58,10 @@ public class SimpleExample {
 		System.out.println(Thread.currentThread().getName() + " finished WRITING");
 	}
 
-	// 读函数
+
+	/**
+	 *  read
+	 */
 	void read() {
 
 		System.out.println("\n" + Thread.currentThread().getName() + " started to READ");
@@ -56,7 +70,9 @@ public class SimpleExample {
 
 	}
 
-	// 写者
+	/**
+	 * writer
+	 */
 	private class Writer implements Runnable {
 
 		SimpleExample ts;
@@ -70,7 +86,8 @@ public class SimpleExample {
 		@Override
 		public void run() {
 			while (true) {
-				if (readerCount.get() == 0) { // 当没有读者时才 可以写
+				if (readerCount.get() == 0) {
+					// 当没有读者时才 可以写
 					try {
 						// System.out.println("write---readerCount= "+readerCount.get());
 						// System.out.println("write---writerCount= "+writerCount.get());
@@ -108,7 +125,8 @@ public class SimpleExample {
 		@Override
 		public void run() {
 			while (true) {
-				if (writerCount.get() == 0) { // 没有写者时 才可以读
+				if (writerCount.get() == 0) {
+					// 没有写者时 才可以读
 					try {
 						// System.out.println("Read---readerCount= "+readerCount.get());
 						// System.out.println("Read---writerCount= "+writerCount.get());
@@ -132,7 +150,9 @@ public class SimpleExample {
 
 	}
 
-	// 创建两个读者 一个写者
+	/**
+	 * 	创建两个读者 一个写者
+ 	 */
 	public void startThreads() {
 		SimpleExample ts = new SimpleExample();
 		t1 = new Thread(new Writer(ts), "Writer # 1");

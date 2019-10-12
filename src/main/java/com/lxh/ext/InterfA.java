@@ -9,6 +9,9 @@ package com.lxh.ext;
  */
 public interface InterfA {
 
+	/**
+	 * test for test
+	 */
 	void test();
 
 }

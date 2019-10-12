@@ -9,6 +9,7 @@ package com.lxh.ext;
  */
 public class Aimpl extends AbstractA implements InterfA {
 
+	@Override
 	public void test() {
 		System.out.println("==> test");
 	}

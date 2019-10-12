@@ -3,14 +3,16 @@ package com.lxh.thread.basic.cyclicbarrier;
 import java.util.concurrent.*;
 
 /**
- * 这里要注意线程池数量的设置，如果不超过 cyclicBarrier的数量，将导致线程无限等待 对于countDownLatch也是一样的效果
+ * 这里要注意线程池数量的设置，
+ * 如果不超过 cyclicBarrier的数量，
+ * 将导致线程无限等待 对于countDownLatch也是一样的效果
  *
  * @author lxh
  */
 public class CyclicBarrierExample2 {
 
 	// 请求的数量
-	private static final int threadCount = 550;
+	private static final int THREAD_COUNT = 550;
 
 	// 需要同步的线程数量
 	private static final CyclicBarrier cyclicBarrier = new CyclicBarrier(5, () -> {
@@ -21,7 +23,7 @@ public class CyclicBarrierExample2 {
 		// 创建线程池
 		ExecutorService threadPool = Executors.newFixedThreadPool(10);
 
-		for (int i = 0; i < threadCount; i++) {
+		for (int i = 0; i < THREAD_COUNT; i++) {
 			final int threadNum = i;
 			Thread.sleep(1000);
 			threadPool.execute(() -> {
