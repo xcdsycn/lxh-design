@@ -3,11 +3,15 @@ package com.lxh.reactor;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.publisher.SignalType;
+import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
+import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.LongAdder;
 
 public class ReactorTest {
 
@@ -70,5 +74,52 @@ public class ReactorTest {
                     System.out.println(t.getT2());
                     }, null, countDownLatch::countDown);    // 4
         countDownLatch.await(10, TimeUnit.SECONDS);     // 5
+    }
+
+    private String getStringSync() {
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "Hello, Reactor!";
+    }
+
+    @Test
+    public void testSyncToAsync() throws InterruptedException {
+        CountDownLatch countDownLatch = new CountDownLatch(1);
+        Mono.fromCallable(() -> getStringSync())    // 1
+                .subscribeOn(Schedulers.elastic())  // 2
+                .subscribe(System.out::println, null, countDownLatch::countDown);
+        countDownLatch.await(10, TimeUnit.SECONDS);
+    }
+
+    @Test
+    public void exceptionHandler() {
+        // 返回一个替换整型值
+        Flux.range(1, 6)
+                .map(i -> 10/(i-3))
+                .onErrorReturn(0)   // 1
+                .map(i -> i*i)
+                .subscribe(System.out::println, System.err::println);
+        //返回一个新的流
+        Flux.range(1, 6)
+                .map(i -> 10/(i-3))
+                .onErrorResume(e -> Mono.just(new Random().nextInt(6))) // 提供新的数据流
+                .map(i -> i*i)
+                .subscribe(System.out::println, System.err::println);
+
+        // finally
+        LongAdder statsCancel = new LongAdder();    // 1
+
+        Flux<String> flux =
+                Flux.just("foo", "bar")
+                        .doFinally(type -> {
+                            if (type == SignalType.CANCEL) { // 2
+                                statsCancel.increment();  // 3
+                                System.out.println("cancel for this flow...");
+                            }
+                        })
+                        .take(1);   // 4
     }
 }
