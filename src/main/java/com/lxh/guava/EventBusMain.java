@@ -22,5 +22,7 @@ public class EventBusMain {
         eventBus.post("hello");
         eventBus.post(1232);
 
+        eventBus.post(12334L);
+
     }
 }
