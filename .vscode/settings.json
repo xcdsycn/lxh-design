@@ -1,0 +1,18 @@
+{
+    // tab长度 
+    "editor.tabSize": 2,
+    // 启用后，将在保存文件时剪裁尾随空格。 
+    "files.trimTrailingWhitespace": true,
+    // 配置 glob 模式以排除文件和文件夹。 
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "maven.executable.path": "/Users/lxh/Downloads/apache-maven-3.3.9/bin"
+}
