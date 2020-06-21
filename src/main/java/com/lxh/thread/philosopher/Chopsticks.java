@@ -1,4 +1,5 @@
 package com.lxh.thread.philosopher;
+
 /**
  * Created by lxh on 2018/6/22.
  */

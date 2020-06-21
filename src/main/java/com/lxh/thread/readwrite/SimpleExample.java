@@ -1,4 +1,5 @@
 package com.lxh.thread.readwrite;
+
 /**
  * Created by lxh on 2018/6/22.
  */
@@ -9,6 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 两个信息号量，一个读、一个写就可以完成读写者问题
+ *
  * @author lxh
  * @Date 2018/6/22
  */
@@ -21,20 +23,24 @@ public class SimpleExample {
 	private static final Random rand = new Random();
 
 	private static Semaphore sm = new Semaphore(2);
+
 	// 信号量 允许2个线程 true表示先进先出
 
 	private static Semaphore wsm = new Semaphore(1);
+
 	// 信号量 允许1个线程
 
 	String text = "Beginning of the Book";
+
 	// 代表书本
 
 	AtomicInteger readerCount = new AtomicInteger(0);
+
 	// 记录当前读者数量，只为了单纯输出日志用
 
 	AtomicInteger writerCount = new AtomicInteger(0);
-	// 记录当前写者数量， 只为了单纯输出日志用
 
+	// 记录当前写者数量， 只为了单纯输出日志用
 
 	/**
 	 * 随机休眠一定时间
@@ -49,7 +55,7 @@ public class SimpleExample {
 
 	/**
 	 * 写函数
- 	 */
+	 */
 	void write(String sentence) {
 		System.out.println(Thread.currentThread().getName() + " started to WRITE");
 		text += "\n" + sentence;
@@ -58,9 +64,8 @@ public class SimpleExample {
 		System.out.println(Thread.currentThread().getName() + " finished WRITING");
 	}
 
-
 	/**
-	 *  read
+	 * read
 	 */
 	void read() {
 
@@ -151,8 +156,8 @@ public class SimpleExample {
 	}
 
 	/**
-	 * 	创建两个读者 一个写者
- 	 */
+	 * 创建两个读者 一个写者
+	 */
 	public void startThreads() {
 		SimpleExample ts = new SimpleExample();
 		t1 = new Thread(new Writer(ts), "Writer # 1");

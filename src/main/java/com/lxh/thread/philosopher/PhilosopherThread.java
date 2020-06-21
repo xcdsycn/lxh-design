@@ -10,6 +10,7 @@ package com.lxh.thread.philosopher;
 public class PhilosopherThread extends Thread {
 
 	private String name;
+
 	// 线程名称，给哲学家编序号用
 
 	private Chopsticks chopsticks;

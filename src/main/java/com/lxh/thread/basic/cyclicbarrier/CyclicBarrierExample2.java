@@ -3,9 +3,7 @@ package com.lxh.thread.basic.cyclicbarrier;
 import java.util.concurrent.*;
 
 /**
- * 这里要注意线程池数量的设置，
- * 如果不超过 cyclicBarrier的数量，
- * 将导致线程无限等待 对于countDownLatch也是一样的效果
+ * 这里要注意线程池数量的设置， 如果不超过 cyclicBarrier的数量， 将导致线程无限等待 对于countDownLatch也是一样的效果
  *
  * @author lxh
  */
