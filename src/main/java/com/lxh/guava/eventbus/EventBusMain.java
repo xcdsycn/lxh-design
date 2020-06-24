@@ -1,4 +1,4 @@
-package com.lxh.guava;
+package com.lxh.guava.eventbus;
 
 import com.google.common.eventbus.EventBus;
 
