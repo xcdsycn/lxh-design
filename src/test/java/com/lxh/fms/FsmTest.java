@@ -1,13 +1,12 @@
 package com.lxh.fms;
 
 import com.lxh.ApplicationTests;
-import com.lxh.SpringBootTestExample;
 import com.lxh.constants.Events;
 import com.lxh.constants.Events1;
 import com.lxh.constants.States;
 import com.lxh.constants.States1;
 import com.lxh.fsm.E1StateMachineBuilder;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;

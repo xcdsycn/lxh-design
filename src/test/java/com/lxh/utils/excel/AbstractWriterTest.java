@@ -1,7 +1,7 @@
 package com.lxh.utils.excel;
 
 import org.fluttercode.datafactory.impl.DataFactory;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class AbstractWriterTest {
 
 	protected Integer number = 5;
 
-	@Before
+	@BeforeEach
 	public void before() {
 		applicantsList = new ArrayList<>();
 		DataFactory df = new DataFactory();

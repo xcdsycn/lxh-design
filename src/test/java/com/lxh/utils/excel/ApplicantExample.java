@@ -4,7 +4,7 @@ import cn.chenhuanming.octopus.Octopus;
 import cn.chenhuanming.octopus.config.Config;
 import cn.chenhuanming.octopus.config.XmlConfigFactory;
 import cn.chenhuanming.octopus.config.annotation.AnnotationConfigFactory;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

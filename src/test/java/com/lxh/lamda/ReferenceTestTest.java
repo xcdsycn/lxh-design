@@ -1,6 +1,7 @@
 package com.lxh.lamda;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Objects;
 import java.util.function.Consumer;

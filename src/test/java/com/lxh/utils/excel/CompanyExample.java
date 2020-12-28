@@ -4,8 +4,8 @@ import cn.chenhuanming.octopus.Octopus;
 import cn.chenhuanming.octopus.config.Config;
 import cn.chenhuanming.octopus.config.XmlConfigFactory;
 import org.fluttercode.datafactory.impl.DataFactory;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -21,7 +21,7 @@ public class CompanyExample {
 	/**
 	 * make testing data
 	 */
-	@Before
+	@BeforeEach
 	public void prepare() {
 		companies = new ArrayList<>();
 		DataFactory df = new DataFactory();
