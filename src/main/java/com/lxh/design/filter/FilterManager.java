@@ -4,6 +4,7 @@ package com.lxh.design.filter;
  */
 
 /**
+* 用来执行FilterChain的生命周期管理，使用其他的代理 工具 执行chain中的 filter
  * @author lxh
  * @Date 2018/2/22
  */

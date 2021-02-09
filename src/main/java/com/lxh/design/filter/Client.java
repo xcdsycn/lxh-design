@@ -4,6 +4,7 @@ package com.lxh.design.filter;
  */
 
 /**
+* 基于filterManager作为媒介，向FilterChain中发送请求
  * @author lxh
  * @Date 2018/2/22
  */

@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+* 所有的Filter都要放到一个列表里，用来循环执行，在列表的最后，是目标，<br>
+* 其实，目标可以放到列表的最后来执行，可以不用这种形式就可以了
  * @author lxh
  * @Date 2018/2/22
  */
