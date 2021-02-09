@@ -22,7 +22,7 @@
 
         <spring.boot.version>2.3.5.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.SR9</spring.cloud.version>
-<!--        <spring.web.version>5.1.8.RELEASE</spring.web.version>-->
+        <spring.web.version>5.1.8.RELEASE</spring.web.version>
         <spring.cloud.openfeign.version>2.2.6.RELEASE</spring.cloud.openfeign.version>
         <spring-cloud-sleuth.version>2.2.5.RELEASE</spring-cloud-sleuth.version>
         <spring-data-common.version>2.1.9.RELEASE</spring-data-common.version>
@@ -242,6 +242,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

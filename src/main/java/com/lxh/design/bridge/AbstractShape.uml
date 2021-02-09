@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lxh.design.bridge.AbstractShape</OriginalElement>
+  <nodes>
+    <node x="35.38833333333332" y="0.0">com.lxh.design.bridge.BridgeApi</node>
+    <node x="10.5" y="108.0">com.lxh.design.bridge.AbstractShape</node>
+    <node x="206.5" y="119.5">com.lxh.design.bridge.RedCircle</node>
+    <node x="1.8366666666666447" y="239.0">com.lxh.design.bridge.Circle</node>
+    <node x="108.88333333333333" y="414.0">com.lxh.design.bridge.BridgePatternDemo</node>
+    <node x="447.5" y="119.5">com.lxh.design.bridge.GreenCircle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lxh.design.bridge.GreenCircle" target="com.lxh.design.bridge.BridgeApi">
+      <point x="0.0" y="-29.0" />
+      <point x="558.0" y="78.0" />
+      <point x="234.2883333333333" y="78.0" />
+      <point x="88.39999999999998" y="29.0" />
+    </edge>
+    <edge source="com.lxh.design.bridge.Circle" target="com.lxh.design.bridge.AbstractShape">
+      <point x="40.33333333333334" y="-62.5" />
+      <point x="102.66999999999999" y="214.0" />
+      <point x="98.5" y="214.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="com.lxh.design.bridge.RedCircle" target="com.lxh.design.bridge.BridgeApi">
+      <point x="0.0" y="-29.0" />
+      <point x="317.0" y="88.0" />
+      <point x="190.0883333333333" y="88.0" />
+      <point x="44.19999999999999" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="335.0" y="236.0" />
+  <SelectedNodes>
+    <node>com.lxh.design.bridge.AbstractShape</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
