@@ -3,6 +3,9 @@ package com.lxh.design.interceptor;
 /**
  * @Description 截取过滤器模式
  * <p>
+ *     本例与filter包中的代码重复
+ * </p>
+ * <p>
  * 当我们想要对应用程序的 请求 或 响应 进行一些 预处理 / 后处理 时，使用截取过滤器设计模式。
  * <p>
  * <p>
