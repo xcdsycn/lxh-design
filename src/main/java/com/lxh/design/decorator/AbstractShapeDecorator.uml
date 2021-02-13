@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lxh.design.decorator.AbstractShapeDecorator</OriginalElement>
+  <nodes>
+    <node x="226.33387445887448" y="0.0">com.lxh.design.decorator.Shape</node>
+    <node x="273.82846320346323" y="262.0">com.lxh.design.decorator.DecoratorPatternDemo</node>
+    <node x="407.0" y="94.0">com.lxh.design.decorator.Rectangle</node>
+    <node x="281.0" y="94.0">com.lxh.design.decorator.Circle</node>
+    <node x="71.68127705627705" y="178.0">com.lxh.design.decorator.RedShapeDecorator</node>
+    <node x="0.0" y="94.0">com.lxh.design.decorator.AbstractShapeDecorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lxh.design.decorator.Rectangle" target="com.lxh.design.decorator.Shape">
+      <point x="0.0" y="-17.0" />
+      <point x="474.5" y="64.0" />
+      <point x="301.7624458874459" y="64.0" />
+      <point x="27.428571428571445" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.DecoratorPatternDemo" target="com.lxh.design.decorator.Shape">
+      <point x="90.375" y="-17.0" />
+      <point x="484.70346320346323" y="237.0" />
+      <point x="552.5" y="237.0" />
+      <point x="552.5" y="54.0" />
+      <point x="315.47673160173156" y="54.0" />
+      <point x="41.14285714285711" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.RedShapeDecorator" target="com.lxh.design.decorator.AbstractShapeDecorator">
+      <point x="0.0" y="-17.0" />
+      <point x="177.68127705627705" y="153.0" />
+      <point x="195.0" y="153.0" />
+      <point x="65.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.DecoratorPatternDemo" target="com.lxh.design.decorator.RedShapeDecorator">
+      <point x="-90.375" y="-17.0" />
+      <point x="303.95346320346323" y="237.0" />
+      <point x="177.68127705627705" y="237.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.Circle" target="com.lxh.design.decorator.Shape">
+      <point x="5.6843418860808015E-14" y="-17.0" />
+      <point x="334.00000000000006" y="74.0" />
+      <point x="288.0481601731602" y="74.0" />
+      <point x="13.714285714285722" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.AbstractShapeDecorator" target="com.lxh.design.decorator.Shape">
+      <point x="86.66666666666669" y="-17.0" />
+      <point x="216.66666666666669" y="74.0" />
+      <point x="260.6195887445888" y="74.0" />
+      <point x="-13.714285714285722" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.DecoratorPatternDemo" target="com.lxh.design.decorator.Circle">
+      <point x="-30.125" y="-17.0" />
+      <point x="364.20346320346323" y="237.0" />
+      <point x="334.0" y="237.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.RedShapeDecorator" target="com.lxh.design.decorator.Shape">
+      <point x="70.66666666666669" y="-17.0" />
+      <point x="248.34794372294374" y="153.0" />
+      <point x="270.5" y="153.0" />
+      <point x="270.5" y="74.0" />
+      <point x="274.33387445887445" y="74.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.decorator.DecoratorPatternDemo" target="com.lxh.design.decorator.Rectangle">
+      <point x="30.125" y="-17.0" />
+      <point x="424.45346320346323" y="237.0" />
+      <point x="474.5" y="237.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="270.5" y="140.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lxh.design.filter.main.InterceptingFilterDemo</OriginalElement>
+  <nodes>
+    <node x="81.3954887218045" y="252.0">com.lxh.design.filter.Client</node>
+    <node x="233.65385338345865" y="84.0">com.lxh.design.filter.DebugFilter</node>
+    <node x="407.6538533834587" y="84.0">com.lxh.design.filter.AuthenticationFilter</node>
+    <node x="49.54166666666663" y="168.0">com.lxh.design.filter.FilterManager</node>
+    <node x="58.65385338345865" y="84.0">com.lxh.design.filter.FilterChain</node>
+    <node x="155.8076754385965" y="0.0">com.lxh.design.filter.Filter</node>
+    <node x="5.0" y="0.0">com.lxh.design.filter.Target</node>
+    <node x="32.541666666666686" y="336.0">com.lxh.design.filter.main.InterceptingFilterDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lxh.design.filter.DebugFilter" target="com.lxh.design.filter.Filter">
+      <point x="0.0" y="-17.0" />
+      <point x="310.6538533834587" y="64.0" />
+      <point x="235.3076754385965" y="64.0" />
+      <point x="26.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.filter.AuthenticationFilter" target="com.lxh.design.filter.Filter">
+      <point x="0.0" y="-17.0" />
+      <point x="528.1538533834587" y="54.0" />
+      <point x="252.9743421052632" y="54.0" />
+      <point x="44.166666666666686" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="327.0" y="185.0" />
+  <SelectedNodes>
+    <node>com.lxh.design.filter.main.InterceptingFilterDemo</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lxh.design.command.Broker</OriginalElement>
+  <nodes>
+    <node x="126.0" y="104.0">com.lxh.design.command.BuyStockCommand</node>
+    <node x="44.072916666666686" y="0.0">com.lxh.design.command.Command</node>
+    <node x="226.0625" y="208.0">com.lxh.design.command.CommandPatterDemo</node>
+    <node x="338.0" y="104.0">com.lxh.design.command.SellStockCommand</node>
+    <node x="417.1770833333333" y="0.0">com.lxh.design.command.Stock</node>
+    <node x="0.0" y="104.0">com.lxh.design.command.Broker</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lxh.design.command.SellStockCommand" target="com.lxh.design.command.Command">
+      <point x="-67.33333333333331" y="-17.0" />
+      <point x="371.6666666666667" y="54.0" />
+      <point x="145.57291666666669" y="54.0" />
+      <point x="43.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.Broker" target="com.lxh.design.command.Command">
+      <point x="26.5" y="-17.0" />
+      <point x="79.5" y="84.0" />
+      <point x="87.57291666666669" y="84.0" />
+      <point x="-14.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.CommandPatterDemo" target="com.lxh.design.command.SellStockCommand">
+      <point x="13.25" y="-17.0" />
+      <point x="345.3125" y="158.0" />
+      <point x="388.5" y="158.0" />
+      <point x="-50.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.CommandPatterDemo" target="com.lxh.design.command.Broker">
+      <point x="-92.75" y="-17.0" />
+      <point x="239.3125" y="188.0" />
+      <point x="26.5" y="188.0" />
+      <point x="-26.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.CommandPatterDemo" target="com.lxh.design.command.BuyStockCommand">
+      <point x="-39.75" y="-17.0" />
+      <point x="292.3125" y="168.0" />
+      <point x="174.0" y="168.0" />
+      <point x="-48.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.BuyStockCommand" target="com.lxh.design.command.Command">
+      <point x="-64.0" y="-17.0" />
+      <point x="158.0" y="84.0" />
+      <point x="116.57291666666669" y="84.0" />
+      <point x="14.5" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.CommandPatterDemo" target="com.lxh.design.command.Stock">
+      <point x="92.75" y="-17.0" />
+      <point x="424.8125" y="188.0" />
+      <point x="561.5" y="188.0" />
+      <point x="561.5" y="64.0" />
+      <point x="505.1770833333333" y="64.0" />
+      <point x="40.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.SellStockCommand" target="com.lxh.design.command.Stock">
+      <point x="0.0" y="-17.0" />
+      <point x="439.0" y="84.0" />
+      <point x="457.1770833333333" y="84.0" />
+      <point x="-8.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.command.BuyStockCommand" target="com.lxh.design.command.Stock">
+      <point x="0.0" y="-17.0" />
+      <point x="222.0" y="64.0" />
+      <point x="425.1770833333333" y="64.0" />
+      <point x="-40.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="207.0" y="138.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

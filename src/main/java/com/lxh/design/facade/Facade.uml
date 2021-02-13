@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lxh.design.facade.Circle</OriginalElement>
+  <nodes>
+    <node x="165.0" y="252.0">com.lxh.design.facade.FacadePatternDemo</node>
+    <node x="194.0" y="168.0">com.lxh.design.facade.ShapeFacade</node>
+    <node x="281.0" y="84.0">com.lxh.design.facade.Square</node>
+    <node x="0.0" y="84.0">com.lxh.design.facade.Rectangle</node>
+    <node x="228.5" y="0.0">com.lxh.design.facade.Shape</node>
+    <node x="155.0" y="84.0">com.lxh.design.facade.Circle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lxh.design.facade.Square" target="com.lxh.design.facade.Shape">
+      <point x="0.0" y="-17.0" />
+      <point x="334.0" y="64.0" />
+      <point x="288.5" y="64.0" />
+      <point x="12.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.facade.Rectangle" target="com.lxh.design.facade.Shape">
+      <point x="0.0" y="-17.0" />
+      <point x="67.5" y="54.0" />
+      <point x="240.5" y="54.0" />
+      <point x="-36.0" y="17.0" />
+    </edge>
+    <edge source="com.lxh.design.facade.Circle" target="com.lxh.design.facade.Shape">
+      <point x="0.0" y="-17.0" />
+      <point x="208.0" y="64.0" />
+      <point x="264.5" y="64.0" />
+      <point x="-12.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="193.5" y="143.0" />
+  <SelectedNodes>
+    <node>com.lxh.design.facade.Circle</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
