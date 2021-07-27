@@ -13,11 +13,13 @@ import java.util.concurrent.*;
  **/
 @Slf4j
 public class Timeout {
-
     public static void main(String[] args) {
         List<Action> actions = new ArrayList<>();
+        // 10S
         actions.add(new Task1());
+        // 20S
         actions.add(new Task2());
+        // 40
         actions.add(new Task3());
         List<Integer> timeouts = new ArrayList<>();
         timeouts.add(5);
@@ -43,7 +45,11 @@ public class Timeout {
                 log.error("===> timeout {}", action.getClass().getSimpleName(), e);
                 future.completeExceptionally(new Exception(action.getClass().getSimpleName() + " 超时异常"));
                 // 并不能真正中断线程的执行，设置的超时，会让线程池中的线程快速返回，但是线程的执行还是会快速执行完成了
-                future.cancel(true);
+                try {
+                    future.cancel(true);
+                }catch (Exception ex) {
+                    log.error("<=== 取消异常，", ex);
+                }
             } finally {
                 long end = System.currentTimeMillis();
                 log.info("==> {} 花费时间：{}", action.getClass().getSimpleName(), end - start);

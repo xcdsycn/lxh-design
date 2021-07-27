@@ -15,7 +15,7 @@ public class Task2 implements Action{
         try {
             System.out.println("task 2 开始执行，,执行时间：20S");
 
-            Thread.sleep(20000);
+            Thread.sleep(20000000);
             System.out.println("task 2 正常执行完成 20S");
         } catch (InterruptedException e) {
             log.error("<== task 2 执行异常，", e);
