@@ -271,6 +271,13 @@
             <artifactId>spring-security-test</artifactId>
         </dependency>
         <!-- end feign -->
+        <!-- disruptor -->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.4</version>
+        </dependency>
+        <!-- end disruptor -->
     </dependencies>
     <build>
         <plugins>
