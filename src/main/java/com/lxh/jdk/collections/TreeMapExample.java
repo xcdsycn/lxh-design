@@ -1,6 +1,11 @@
 package com.lxh.jdk.collections;
 
-import java.util.*;
+
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 /**
  * @Description TreeMap用法
