@@ -31,7 +31,7 @@
         <!-- other -->
         <mybatis-plus.version>3.1.2</mybatis-plus.version>
         <freemarker.version>2.3.28</freemarker.version>
-        <swagger.version>2.6.1</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
     </properties>
 
     <dependencyManagement>
